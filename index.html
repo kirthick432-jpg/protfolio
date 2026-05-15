@@ -1,118 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirthick </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #0f172a;
-            color: #f1f5f9;
-        }
-        header {
-            background: #1e293b;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-            background: #020617;
-            padding: 10px;
-        }
-        nav a {
-            color: #38bdf8;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirthick | AI Developer</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#0f172a;
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+    background:#020617;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+nav ul li{ margin-left:20px; }
+nav a{ color:white; text-decoration:none; }
+
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
+.btn{
+    background:#38bdf8;
+    padding:12px 20px;
+    text-decoration:none;
+    color:black;
+    border-radius:8px;
+}
+section{ padding:60px 10%; }
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    flex:1;
+}
+
+.project{
+    background:#1e293b;
+    padding:20px;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>Kirthick S</h1>
-    <p>Aspiring Developer | ML & OpenCV Enthusiast</p>
+<nav>
+<h2>Kirthick S</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+<section class="hero">
+<h1>AI & Machine Learning Developer</h1>
+<p>Python | Computer Vision | OpenCV | Real-World Projects</p>
+<a href="resume.pdf" class="btn" download>Download Resume</a>
+</section>
 
 <section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            I am a passionate student interested in machine learning and computer vision.
-            I enjoy building real-world projects using Python and OpenCV.
-        </p>
-    </div>
+<h2>About Me</h2>
+<p>
+I am a passionate AI & Machine Learning student who loves building real-world applications using Python and Computer Vision. 
+I have hands-on experience in developing ML models and working with OpenCV for practical projects.
+<br><br>
+Currently focused on Deep Learning, Data Science and AI-based web apps.
+</p>
 </section>
 
 <section id="skills">
-    <h2>Skills</h2>
-    <div class="card">
-        <ul>
-            <li>Python,C++,Java</li>
-            <li>Machine Learning (Basics)</li>
-            <li>Git & GitHub</li>
-            <li>Good Communication</li>
-        </ul>
-    </div>
+<h2>Skills</h2>
+<div class="cards">
+<div class="card"><h3>Programming</h3><p>Python, Java, C++</p></div>
+<div class="card"><h3>AI / ML</h3><p>Machine Learning, Linear Regression, OpenCV, NumPy, Pandas</p></div>
+<div class="card"><h3>Tools</h3><p>Git, GitHub, VS Code, Jupyter</p></div>
+<div class="card"><h3>Soft Skills</h3><p>Problem Solving, Communication, Teamwork</p></div>
+</div>
 </section>
 
 <section id="projects">
-    <h2>Projects</h2>
+<h2>Projects</h2>
 
-    <div class="card">
-        <h3>gold price prediction</h3>
-        <p>
-            Gold prices in India are influenced by both global trends and the USD/INR exchange rate. Internationally, gold is traded in US dollars, so any prediction usually starts with how gold is expected to perform globally. In 2026, most analysts believe gold will remain strong due to factors like inflation, central bank buying, and global uncertainty. This creates a generally upward trend in dollar terms.
-        </p>
-    </div>
+<div class="project">
+<h3>💰 Gold Price Prediction</h3>
+<p>Machine learning model predicting gold prices using USD/INR dataset with Linear Regression.</p>
+<a href="#">View GitHub →</a>
+</div>
 
-    <div class="card">
-        <h3>Future Project</h3>
-        <p>Ai Tutor</p>
-    </div>
+<div class="project">
+<h3>🏦 Bank Management System</h3>
+<p>Java + MySQL application for account management, deposits & withdrawals.</p>
+<a href="#">View GitHub →</a>
+</div>
 
+<div class="project">
+<h3>🤖 AI Tutor Chatbot</h3>
+<p>Upcoming NLP chatbot to answer student queries.</p>
+<a href="#">View GitHub →</a>
+</div>
+
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<p>
+B.Tech – Artificial Intelligence & Data Science <br>
+Dr. MGR Educational and Research Institute, Chennai <br>
+Expected Graduation: 2027
+</p>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: kirthick432@gmail.com</p>
-        <p>Phone: 6381740616</p>
-        <p>GitHub: kirthick432-jpg</p>
-    </div>
+<h2>Contact</h2>
+<p>Email: yourmail@gmail.com</p>
+<p>Phone: +91 XXXXX XXXXX</p>
+<p>GitHub: github.com/yourusername</p>
 </section>
 
 <footer>
-    <p>© 2026 Kirthick S</p>
+<p>© 2026 Kirthick S</p>
 </footer>
 
 </body>
 </html>
+
